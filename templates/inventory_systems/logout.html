@@ -1,0 +1,17 @@
+{% extends "../layout.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="content-section mt-5 d-flex justify-content-center align-items-center">
+    <div class="card text-center bg-lime-green shadow-lg p-3 mb-5 bg-body rounded">
+        <div class="card-body">
+            <h2 class="card-title font-weight-bold">You have been logged out</h2>
+            <p class="card-text text-muted">
+                Feel free to <a href="{% url 'login' %}" class="text-success">Login Again</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
